@@ -1,0 +1,93 @@
+/****all pages****/
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.upperCase {
+	 text-transform: uppercase;
+}
+
+/****landing and instruction pages****/
+
+#gameButton {
+	background-color: #66CD00;
+    border: none;
+    padding: 15px 100px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 35px;
+
+}
+
+
+
+
+/****landing page****/
+
+#landing {
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-top: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/****instruction page****/
+
+#instruction {
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-top: 15%;
+}
+
+p {
+	width: 365px;
+	text-align: center;
+	margin-left: 450px;
+	line-height: 25px;
+	margin-bottom: 30px;
+}
+
+#instruction_pageHome {
+	
+}
+
+#instructionText {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****game page****/
+
+
+#game {
+	text-decoration: none;
+}
+

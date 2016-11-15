@@ -1,24 +1,75 @@
-var myGamePiece1;
-var myGamePiece2;
-var myGamePiece2;
-var winningLine = [];
-
-function startGame() {
-    myGamePiece1 = new component(30, 30, "blue");
-    myGameArea.start();
+window.onkeydown = function (e) {
+if (!e) {
+e = window.event;
 }
 
-var myGameArea = {
-    canvas : document.createElement("canvas"),
-    start : function() {
-        this.canvas.width = 1200;
-        this.canvas.height = 500;
-        this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-        this.frameNo = 0;
-        this.interval = setInterval(updateGameArea, 20);
-        },
-    clear : function() {
-        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+var code = e.keyCode;
+var orange = document.getElementById("orange");
+var blue = document.getElementById("blue");
+var white = document.getElementById("white");
+
+var left = parseInt (orange.style.left, 10);
+    if ( code == 37 ) { //LEFT
+
+
+    if ( left > 0 ) {
+    orange.style.left = left - 10 + 'px';
     }
-}
+    } else if ( code == 39 ) { //RIGHT
+
+
+    if ( left+orange.width+10 < window.innerWidth ) {
+    orange.style.left = left + 10 + 'px';
+    }
+    } else if ( code == 40 ) { //DOWN
+    if ( top+orange.height+10 < window.innerHeight ) {
+    orange.style.top = top + 10 +'px';
+    }
+    }
+    }
+
+
+var leftTwo = parseInt (blue.style.leftTwo, 10);
+    if ( code == 37 ) { //LEFT
+
+    if ( leftTwo > 0 ) {
+    blue.style.leftTwo = leftTwo - 10 + 'px';
+    }
+    } else if ( code == 39 ) { //RIGHT
+
+    if ( leftTwo+blue.width+10 < window.innerWidth ) {
+    blue.style.leftTwo = leftTwo + 10 + 'px';
+    }
+    } else if ( code == 40 ) { //DOWN
+    if ( top+blue.height+10 < window.innerHeight ) {
+    blue.style.top = top + 10 +'px';
+    }
+    }
+    }
+
+var leftThree = parseInt (blue.style.leftThree, 10);
+
+    if ( code == 37 ) { //LEFT
+
+
+    if ( left > 0 ) {
+    white.style.left = left - 10 + 'px';
+    }
+    } else if ( code == 38 ) { //UP
+  
+    if ( top > 0 ) {
+    white.style.top = top - 10 + 'px';
+    }
+    } else if ( code == 39 ) { //RIGHT
+
+
+    if ( left+white.width+10 < window.innerWidth ) {
+    white.style.left = left + 10 + 'px';
+    }
+    } else if ( code == 40 ) { //DOWN
+    if ( top+white.height+10 < window.innerHeight ) {
+    white.style.top = top + 10 +'px';
+    }
+    }
+    }
+

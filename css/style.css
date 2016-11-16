@@ -102,13 +102,18 @@ li a:hover {
 }
 
 #playerOne {
-	position: absolute; top: 150px; left: 0px;
+	background-color: #FB4F14;
+    width: 100px;
+    height: 100px;
+    position: relative; top: 50px; left: 0px;
+    border-radius: 90%;
 }
 
 #playerTwo {
-	position: absolute; top: 300px; left: 0px;
+	background-color: #002244;
+    width: 100px;
+    height: 100px;
+    position: relative; top: 200px; left: 0px;
+    border-radius: 90%;
 }
 
-#playerThree {
-	position: absolute; top: 450px; left: 0px;
-}

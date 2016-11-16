@@ -30,6 +30,7 @@ $(document).keydown(function(e){
     }
 });
  
+console.log("gulp");
 
 $(window).keypress(function (e) {
   if (e.keyCode === 39*3|| e.keyCode === 68*3) {

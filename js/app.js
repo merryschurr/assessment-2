@@ -30,16 +30,6 @@ $(document).keydown(function(e){
     }
 });
  
-event.alert().then(function(result) {
-  if (e.keyCode === 39) {
-    console.log('Player One Wins!');
-    return;
-  }
-  if (e.keyCode === 68) {
-    console.log('Player Two Wins!');
-    return;
-  }
-});
 
 $(window).keypress(function (e) {
   if (e.keyCode === 39*3|| e.keyCode === 68*3) {

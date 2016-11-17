@@ -7,10 +7,6 @@ var Ypos = 0; //Sets starting position up/down
 var spd = 250; //Milliseconds
 var dstnc = 100; //Pixels
 
-var winner = 500;
-
-var x = 500;
-
 console.log("hello");
 
 $(document).keydown(function(e) {
@@ -31,6 +27,6 @@ $(document).keydown(function(e) {
 console.log("gulp");
 
 $(document).ready(function (){
-  if ($('#playerTwo').text().length >= 3) 
+  if ($('#playerTwo').text().length > 3) 
    alert("Winner!");
 });

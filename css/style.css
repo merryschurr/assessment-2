@@ -1,6 +1,6 @@
 /****all pages****/
 
-a {
+* {
 	text-decoration: none;
 	color: white;
 }
@@ -9,7 +9,9 @@ a {
 	 text-transform: uppercase;
 }
 
+
 /****landing and instruction pages****/
+
 
 #gameButton {
 	background-color: #66CD00;
@@ -26,9 +28,8 @@ a {
 }
 
 
-
-
 /****landing page****/
+
 
 #landing {
 	background-color: black;
@@ -38,16 +39,8 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
-
 /****instruction page****/
+
 
 #instruction {
 	background-color: black;
@@ -72,29 +65,22 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /****game page****/
+
 
 div ul {
     overflow: hidden;
-    background-color: #333;
+    background-color: #66CD00;
+    text-decoration: none;
+    list-style: none;
+    top: 0;
+    width: 100%;
+    margin-top: 0;
      
 }
 
 li a:hover {
     background-color: #111;
-    text-decoration: none;
 }
 
 #game_page {

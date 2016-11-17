@@ -1,9 +1,3 @@
-window.keydown = function (e) {
-if (!e) {
-e = window.event;
-}
-}
-
 var orange = document.getElementById("playerOne");
 var blue = document.getElementById("playerTwo");
 
@@ -13,9 +7,13 @@ var Ypos = 0; //Sets starting position up/down
 var spd = 250; //Milliseconds
 var dstnc = 100; //Pixels
 
+var winner = 500;
+
+var x = 500;
+
 console.log("hello");
 
-$(document).keydown(function(e){
+$(document).keydown(function(e) {
     if (e.keyCode == 39){ // arrow right
         $('#playerOne').animate({
             left: dstnc+Xpos+'px'
@@ -32,9 +30,7 @@ $(document).keydown(function(e){
  
 console.log("gulp");
 
-$(window).keypress(function (e) {
-  if (e.keyCode === 39*3|| e.keyCode === 68*3) {
-    e.preventDefault()
-    console.log('Winner')
-  }
-})
+$(document).ready(function (){
+  if ($('#playerTwo').text().length >= 3) 
+   alert("Winner!");
+});
